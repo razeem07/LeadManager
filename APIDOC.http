@@ -1,0 +1,42 @@
+
+
+###
+GET http://127.0.0.1:8000/api/leads/
+
+
+
+###
+POST http://127.0.0.1:8000/api/leads/
+Content-Type: application/json
+
+{
+    "name": "adil",
+    "mobile":"8989898989",
+    "email":"raz@gmail.com",
+    "college":"ycet",
+    "qualification":"btech",
+    "passout_year":"2015"
+
+}
+
+
+###
+GET http://127.0.0.1:8000/api/leads/1/
+
+
+###
+DELETE http://127.0.0.1:8000/api/leads/1/
+
+###
+PUT http://127.0.0.1:8000/api/leads/2/
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "nyha",
+    "mobile":"8567676760",
+    "email":"ny@gmail.com",
+    "college":"ycet",
+    "qualification":"btech",
+    "passout_year":"2025"
+}
