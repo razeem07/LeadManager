@@ -2,11 +2,13 @@
 
 ###
 GET http://127.0.0.1:8000/api/leads/
+Authorization: Basic admin:admin
 
 
 
 ###
 POST http://127.0.0.1:8000/api/leads/
+Authorization: Basic admin:admin
 Content-Type: application/json
 
 {
@@ -21,14 +23,17 @@ Content-Type: application/json
 
 
 ###
-GET http://127.0.0.1:8000/api/leads/1/
+GET http://127.0.0.1:8000/api/leads/3/
+Authorization: Basic admin:admin
 
 
 ###
 DELETE http://127.0.0.1:8000/api/leads/1/
+Authorization: Basic admin:admin
 
 ###
 PUT http://127.0.0.1:8000/api/leads/2/
+Authorization: Basic admin:admin
 Content-Type: application/json
 
 {

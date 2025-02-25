@@ -8,9 +8,15 @@ from api.serializers import LeadSerializer
 
 from api.models import Lead
 
+from rest_framework import authentication,permissions
+
 # Create your views here.
 
 class LeadListCreateView(APIView):
+
+    authentication_classes=[authentication.BasicAuthentication]
+
+    permission_classes =[permissions.IsAdminUser]
 
     def get(self,request,*args,**kwargs):
 
@@ -37,6 +43,10 @@ class LeadListCreateView(APIView):
         
 
 class LeadRetrieveUpdateDestroyView(APIView):
+
+    authentication_classes=[authentication.BasicAuthentication]
+
+    permission_classes =[permissions.IsAdminUser]
 
     def get(self,request,*args,**kwargs):
           
